@@ -1,0 +1,45 @@
+.box {
+    width: 960px;
+    background: transparent;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    border: 3px solid black;
+    padding-top: 20px;
+}
+
+.section {
+    margin-top: 10px;
+    width: 100%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    background: black;
+    margin-left: 100px;
+}
+
+.stats {
+    float: right;
+    margin-top: -120px;
+    margin-right: 50px;
+}
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    border: 3px solid black;
+    height: 100px;
+}
+
+.project {
+    border-radius: 10%;
+    border: none;
+    margin-top: 25px;
+    margin-left: 390px;
+    background: rgb(9, 139, 161);
+}
