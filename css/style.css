@@ -8,6 +8,7 @@
     background: #EBEBEB;
     height: 100px;
     position: fixed;
+    z-index: 5;
 }
 
 .section_1 {
