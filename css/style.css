@@ -12,14 +12,14 @@
 }
 
 .section_1 {
-    width: 1326px;
+    width: 100%;
     height: 1145px;
     position: relative;
     top: 100px;
 }
 
 .section_2 {
-    width: 1658px;
+    width: 100%;
     height: 600px;
     background: #EBEBEB;
     position: relative;
@@ -33,7 +33,7 @@
 }
 
 .section_3 {
-    width: 1658px;
+    width: 100%;
     height: 900px;
     background: #EBEBEB;
     position: relative;
@@ -41,7 +41,7 @@
 
 .footer {
     background: #BFBFBF;
-    width: 109%;
+    width: 100%;
     height: 100px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .image_head {
-    width: 125%;
+    width: 100%;
     position: relative;
 }
 
