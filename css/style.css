@@ -4,7 +4,7 @@
 }
 
 .head {
-    width: 1658px;
+    width: 100%;
     background: #EBEBEB;
     height: 100px;
     position: fixed;
@@ -245,7 +245,6 @@
     padding: 25px 0 5px;
     text-align: center;
     background: #EBEBEB;
-    й
 }
 
 .menu-main li {
