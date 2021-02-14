@@ -20,6 +20,10 @@ a:hover {
     color: #999;
 }
 
+.col-sm-3 {
+    height: 200px;
+}
+
 
 /* ---------------------------------------------- /*
  * Transition elsements
