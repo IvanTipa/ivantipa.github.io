@@ -235,8 +235,8 @@ th {
 
 @media print {
     *,
-    :before,
-    :after {
+     :before,
+     :after {
         color: #000!important;
         text-shadow: none!important;
         background: transparent!important;
@@ -1809,7 +1809,7 @@ pre code {
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px
+    padding-left: 15px;
 }
 
 .col-xs-1,
