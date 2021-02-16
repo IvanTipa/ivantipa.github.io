@@ -6,8 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 img {
     max-width: 100%;
     height: 300px;
@@ -20,6 +18,10 @@ a {
 a:hover {
     text-decoration: none;
     color: #999;
+}
+
+.col-sm-3__par:hover {
+    visibility: hidden;
 }
 
 
@@ -919,6 +921,77 @@ figure.effect-bubba:hover figcaption::after {
 
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* figure cm-3 */
+
+figure.effect-bubba-col img {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-bubba-col:hover img {
+    opacity: 0.4;
+}
+
+figure.effect-bubba-col figcaption::before,
+figure.effect-bubba-col figcaption::after {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba-col figcaption::before {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    -webkit-transform: scale(0, 1);
+}
+
+figure.effect-bubba-col figcaption::after {
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+}
+
+figure.effect-bubba-col h2 {
+    padding-top: 10%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+    color: #fff;
+}
+
+figure.effect-bubba-col p {
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-bubba-col:hover figcaption::before,
+figure.effect-bubba-col:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-bubba-col:hover h2,
+figure.effect-bubba-col:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
