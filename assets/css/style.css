@@ -986,7 +986,7 @@ figure.effect-bubba-col h2 {
     color: #fff;
 }
 
-figure.effect-bubba-col h3 {
+figure.effect-bubba-col h5 {
     padding-top: 10%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -996,7 +996,7 @@ figure.effect-bubba-col h3 {
     visibility: hidden;
 }
 
-figure.effect-bubba-col:hover h3 {
+figure.effect-bubba-col:hover h5 {
     opacity: 1;
     z-index: 10000;
     -webkit-transform: translate3d(0, 0, 0);
