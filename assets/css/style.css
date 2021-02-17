@@ -987,7 +987,7 @@ figure.effect-bubba-col h2 {
 }
 
 figure.effect-bubba-col h5 {
-    padding-top: 10%;
+    padding-top: 11%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, -20px, 0);
