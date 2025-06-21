@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeepEx – Премиум торговая платформа</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="DeepEx Logo" class="logo" />
+            </div>
+            <div class="language-switcher">
+                <a href="index.html" class="lang-option active" data-lang="ru">RU</a>
+                <span class="lang-separator">|</span>
+                <a href="en.html" class="lang-option" data-lang="en">EN</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#accounts">Счета</a></li>
+                    <li><a href="#steps">Как начать</a></li>
+                    <li><a href="#education">Обучение</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><button class="account-btn button-pulse">Открыть счёт</button></li>
+                </ul>
+            </nav>
+
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="mobile-overlay" id="overlay"></div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="images/logo.png" alt="DeepEx Logo" class="logo" width="120">
+                <button class="close-menu" id="closeMenu">&times;</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#accounts">Счета</a></li>
+                <li><a href="#steps">Как начать</a></li>
+                <li><a href="#education">Обучение</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><button class="account-btn button-pulse" onclick="redirectToPlatform()">Открыть счёт</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp">Инвестируйте с DeepEx</h1>
+                <p>Продвинутая платформа для профессионального трейдинга с искусственным интеллектом, мощной аналитикой
+                    и максимальной защитой ваших активов.</p>
+                <div class="hero-btns">
+                    <button class="account-btn button-pulse">Начать торговлю</button>
+                </div>
+                <div class="volume-indicator" style="margin-top: 20px;">
+                    <div class="volume-bar" style="width: 70%;"></div>
+                    <span>Объем торгов: $1.2B</span>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="trading-animation">
+                    <div class="crypto-chart chart-wave"></div>
+                    <div class="price-indicator">
+                        <div class="price price-flash">$42,156.78</div>
+                        <div class="price-change price-flash">+2.45%</div>
+                    </div>
+                    <div class="crypto-coins">
+                        <div class="coin coin-bounce">BTC</div>
+                        <div class="coin coin-bounce">ETH</div>
+                        <div class="coin coin-bounce">BNB</div>
+                    </div>
+                    <div class="trading-stats">
+                        <div class="stat-card">
+                            <div class="stat-value">24%</div>
+                            <div class="stat-label">Средняя доходность</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Торговых активов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <section id="accounts" class="container">
+        <h2>Типы счетов</h2>
+        <div class="account-types">
+            <div class="account-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">💎</div>
+                <h3>Mini</h3>
+                <div class="price">от 500 $</div>
+                <ul>
+                    <li>Торговля на недорогих активах</li>
+                    <li>Кредитное плечо 1:5</li>
+                    <li>Поддержка финансового аналитика</li>
+                    <li>Доступ к базовым инструментам</li>
+                </ul>
+                <p class="tagline">Идеальный старт для новичков</p>
+                <button class="account-btn">Открыть счёт</button>
+            </div>
+
+            <div class="account-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">🚀</div>
+                <div class="popularity-badge">
+                    <span>🔥 Популярный выбор</span>
+                </div>
+                <h3>Standard</h3>
+                <div class="price">от 5 000 $</div>
+                <ul>
+                    <li>Торговля на сырье и криптовалюте</li>
+                    <li>Кредитное плечо 1:10</li>
+                    <li>Обучение от аналитика</li>
+                    <li>Новостные уведомления</li>
+                    <li>Расширенная аналитика</li>
+                </ul>
+                <p class="tagline">Для активных трейдеров</p>
+                <button class="account-btn">Открыть счёт</button>
+            </div>
+
+            <div class="account-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">🔥</div>
+                <h3>Premium</h3>
+                <div class="price">от 25 000 $</div>
+                <ul>
+                    <li>Торговля на всех активах</li>
+                    <li>Кредитное плечо 1:30</li>
+                    <li>Курсы от ведущих специалистов</li>
+                    <li>VIP-новостные уведомления</li>
+                    <li>Персональный менеджер</li>
+                </ul>
+                <p class="tagline">Профессиональные инструменты</p>
+                <button class="account-btn">Открыть счёт</button>
+            </div>
+
+            <div class="account-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">👑</div>
+                <h3>Lux</h3>
+                <div class="price">от 100 000 $</div>
+                <ul>
+                    <li>Доступ ко всем активам</li>
+                    <li>Кредитное плечо 1:50</li>
+                    <li>Доверительное управление</li>
+                    <li>Участие во всех мероприятиях</li>
+                    <li>Персональный VIP-эксперт</li>
+                    <li>Эксклюзивные стратегии</li>
+                </ul>
+                <p class="tagline">Премиум-класс для инвесторов</p>
+                <button class="account-btn">Открыть счёт</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="container">
+        <h2>Наши преимущества</h2>
+        <div class="features">
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">⚡</div>
+                <h3>Молниеносная скорость</h3>
+                <p>Исполнение ордеров за 0.05 секунды благодаря передовым технологиям</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">🔒</div>
+                <h3>Максимальная защита</h3>
+                <p>Ваши средства защищены многоуровневой системой безопасности</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">📊</div>
+                <h3>Продвинутая аналитика</h3>
+                <p>Искусственный интеллект для анализа рынка и прогнозирования</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">💼</div>
+                <h3>Мультиаккаунт</h3>
+                <p>Управляйте несколькими счетами с одного устройства</p>
+                <div class="trend-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="steps" class="container">
+        <h2>Как начать</h2>
+        <div class="steps">
+            <div class="step-card scroll-reveal active-bg">
+                <div class="step-number">1</div>
+                <h3>Регистрация</h3>
+                <p>Заполните простую форму и подтвердите свою личность</p>
+            </div>
+            <div class="step-card scroll-reveal active-bg">
+                <div class="step-number">2</div>
+                <h3>Обучение</h3>
+                <p>Пройдите бесплатный курс для начинающих трейдеров</p>
+            </div>
+            <div class="step-card scroll-reveal active-bg">
+                <div class="step-number">3</div>
+                <h3>Пополнение</h3>
+                <p>Внесите депозит удобным для вас способом</p>
+            </div>
+            <div class="step-card scroll-reveal active-bg">
+                <div class="step-number">4</div>
+                <h3>Торговля</h3>
+                <p>Начните торговать с помощью наших инструментов</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2>Обучение и аналитика</h2>
+        <div class="features">
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">🎓</div>
+                <h3>Базовый курс</h3>
+                <p>Основы трейдинга для начинающих с нуля</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">📈</div>
+                <h3>Технический анализ</h3>
+                <p>Изучите графики и индикаторы для прогнозирования</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">📰</div>
+                <h3>Ежедневная аналитика</h3>
+                <p>Актуальные рыночные обзоры и прогнозы</p>
+                <div class="trend-line"></div>
+            </div>
+            <div class="feature-card scroll-reveal active-bg">
+                <div class="feature-icon animate-icon">🎥</div>
+                <h3>Вебинары</h3>
+                <p>Онлайн-трансляции с профессиональными трейдерами</p>
+                <div class="trend-line"></div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="container">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Как открыть счёт на DeepEx?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Открытие счёта занимает всего 5 минут. Нажмите кнопку "Открыть счёт", заполните регистрационную
+                        форму, подтвердите личность (требуется только для верифицированных аккаунтов) и внесите депозит.
+                        После этого вы получите полный доступ ко всем функциям платформы.</p>
+                </div>
+            </div>
+
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Какие способы пополнения доступны?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Мы поддерживаем все популярные способы пополнения: банковские карты (Visa, Mastercard),
+                        электронные кошельки (PayPal, Skrill, Neteller), криптовалюты (Bitcoin, Ethereum, USDT) и
+                        банковские переводы. Время зачисления средств - от нескольких секунд до 1 рабочего дня в
+                        зависимости от выбранного метода.</p>
+                </div>
+            </div>
+
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Есть ли комиссии за вывод средств?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Комиссии зависят от типа счёта: Mini - 1.5%, Standard - 1%, Premium - 0.5%, Lux - 0%. Для
+                        криптовалютных переводов комиссия фиксированная и составляет эквивалент $5 вне зависимости от
+                        суммы.</p>
+                </div>
+            </div>
+
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Какие гарантии безопасности вы предоставляете?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Мы используем банковский уровень шифрования (256-bit SSL), двухфакторную аутентификацию, холодное
+                        хранение криптоактивов и регулярные аудиты безопасности. Средства клиентов хранятся на
+                        сегрегированных счетах в надежных банках-партнерах.</p>
+                </div>
+            </div>
+
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Какие активы доступны для торговли?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>На платформе доступно более 150 торговых инструментов, включая криптовалюты, акции, индексы,
+                        товары и валютные пары. Полный список доступных активов можно найти в личном кабинете после
+                        регистрации.</p>
+                </div>
+            </div>
+
+            <div class="faq-item scroll-reveal">
+                <div class="faq-question">
+                    <span>Как работает кредитное плечо?</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Кредитное плечо позволяет увеличить объем торговли при меньшем депозите. Размер плеча зависит от
+                        типа счета: Mini - 1:5, Standard - 1:10, Premium - 1:30, Lux - 1:50. Использование плеча
+                        увеличивает как потенциальную прибыль, так и риски.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-container">
+            <div class="about-content scroll-reveal">
+                <h2>О компании DeepEx</h2>
+                <p>DeepEx - это инновационная торговая платформа, основанная в 2018 году командой профессионалов с более
+                    чем 15-летним опытом работы на финансовых рынках.</p>
+                <p>Наша миссия - сделать профессиональные инструменты трейдинга доступными для каждого, независимо от
+                    уровня подготовки и суммы инвестиций.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">активных клиентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">$0B+</div>
+                        <div class="stat-label">объем торгов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0+</div>
+                        <div class="stat-label">торговых активов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">поддержка</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image scroll-reveal">
+                <div class="investment-animation">
+                    <div class="growth-chart"></div>
+                    <div class="rising-coins">
+                        <div class="coin rising">BTC</div>
+                        <div class="coin rising">ETH</div>
+                        <div class="coin rising">XRP</div>
+                    </div>
+                    <div class="profit-indicator">
+                        <div class="profit-value">+127%</div>
+                        <div class="profit-label">Средняя доходность</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="container">
+        <h2>Наши контакты</h2>
+        <div class="contacts-container">
+
+            <div class="license-block scroll-reveal active-bg">
+                <div class="license-content">
+                    <p>DeepEx является лицензированным оператором финансовых услуг в соответствии с
+                        законодательством штата Нью-Йорк.</p>
+                    <div class="license-image">
+                        <a href="/images/licence.jpg" target="_blank" rel="noopener noreferrer">
+                            <img src="/images/licence.jpg" alt="Лицензия DeepEx"
+                                style="max-width: 100%; border: 1px solid #ddd; cursor: pointer;">
+                        </a>
+                    </div>
+                    <p>Лицензия №801-107518 от 20 декабря 2017 года, выданная Департаментом финансовых услуг штата
+                        Нью-Йорк.</p>
+                </div>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card scroll-reveal active-bg">
+                    <div class="contact-icon">📍</div>
+                    <h3>Headquarters</h3>
+                    <div class="contact-locations">
+                        <div class="location">
+                            <h4>Austin</h4>
+                            <p>11515 Burnet Rd</p>
+                            <p>Austin, TX 78758</p>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card scroll-reveal active-bg">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone Support</h3>
+                    <div class="contact-phones">
+                        <p>US: +1 (213) 267-4185</p>
+                        <p>24/7 Trading Support</p>
+                    </div>
+                </div>
+
+                <div class="contact-card scroll-reveal active-bg">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <div class="contact-emails">
+                        <p>support@deepex.markets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="DeepEx Logo" width="120">
+                    <p>Инновационная платформа для профессионального трейдинга и инвестиций</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 DeepEx. Все права защищены.</p>
+                    <div class="legal-links">
+                        <a href="/aml.pdf" target="_blank">Политика конфиденциальности</a>
+                        <a href="/terms.pdf" target="_blank">Условия использования</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
